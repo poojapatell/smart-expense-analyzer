@@ -1,15 +1,11 @@
 import requests
 import os
-
-API_KEY = os.getenv("GEMINI_API_KEY")
-API_KEY = "AIzaSyCjE0SfhwrbncRg0pWbl9phZHCuDKOeUxQ"
-
 import time
-
 import json
-
 import re
 
+
+API_KEY = os.getenv("GEMINI_API_KEY")
 
 def generate_ai_insight(data):
     url = f"https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key={API_KEY}"
